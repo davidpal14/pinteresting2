@@ -84,6 +84,8 @@ Rails.application.configure do
 #Set this to Actual Host Name
   config.action_mailer.default_url_options = { :host => 'davidspal.com' }
 
+
+#Set's Paperclip images to uplad to Amazon S3
   config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
